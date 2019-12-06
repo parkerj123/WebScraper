@@ -8,8 +8,17 @@ import argparse
 
 
 parser = argparse.ArgumentParser(description="Scrape a website")
-parser.add_argument('-u', metavar='URL', type=str, help="The URL to be scraped")
-parser.add_argument('-t', metavar='Tag(s)', nargs='*', type=str, help="A list of tags to include in the scrape. Defaults to all", default=None)
+parser.add_argument('-u', 
+		    metavar='URL', 
+		    type=str, 
+		    help="The URL to be scraped")
+parser.add_argument('-t', 
+		    metavar='Tag(s)', 
+		    nargs='*', 
+		    type=str, 
+		    help="A list of tags to include in the scrape. Defaults to all", 
+		    default=None)
+
 args= parser.parse_args()
 
 DEFAULT_URL = "www.hostedgraphite.com"
