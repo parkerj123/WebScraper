@@ -1,3 +1,5 @@
+#This program scrapes a website and prints the contents to std output
+
 from bs4 import BeautifulSoup as bs4
 import urllib3
 import certifi
